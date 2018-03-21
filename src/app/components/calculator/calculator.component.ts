@@ -49,7 +49,7 @@ export class CalculatorComponent implements OnInit {
     progress.style.display="none";
 
     var table = document.getElementById("recipeTable");
-    table.style.display="none";
+    table.style.display = "none";
   }
 
   toggleFlavor(){
