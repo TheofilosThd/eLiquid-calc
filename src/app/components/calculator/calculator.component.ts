@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {parse} from "querystring";
 
 @Component({
   selector: 'app-calculator',
@@ -146,8 +147,20 @@ export class CalculatorComponent implements OnInit {
     this.nicPG=100-this.nicVG;
   }
 
-  conv(){
-    this.pg=this.pg*1.04;
+  pbPercentage(value){
+    return parseFloat(((value*100)/this.quantity).toFixed(2));
+  }
+
+  convertPGtoGr(value){
+    return parseFloat((value*1.04).toFixed(2));
+  }
+
+  convertVGtoGr(value){
+    return parseFloat((value*1.26).toFixed(2));
+  }
+
+  convertNictoGr(pg,vg){
+    return parseFloat(((this.strength * this.quantity*(this.nicPG*1.04/100+ this.nicVG*1.26/100)) / this.nicStrength).toFixed(2));
   }
 
   hideTable(){
