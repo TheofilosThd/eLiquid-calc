@@ -56,11 +56,10 @@ export class CalculatorComponent implements OnInit {
     this.flavorShow=!this.flavorShow;
     var btn = document.getElementById("flavorBtn");
     if(this.flavorShow) {
-      btn.textContent = "Remove Flavor";
-      btn.style.backgroundColor ="#D11717";
+      //btn.textContent = "Remove Flavor";
+      btn.style.display="none";
     }else{
       btn.textContent = "Add Flavor";
-      btn.style.backgroundColor="black";
       this.flavor=0;
     }
   }

@@ -60,13 +60,13 @@
     <div class="form-group row">
       <label for="nicVG" class="col-sm-5">VG-content of nicotine</label>
       <div class="col-sm-7 input-group mb-3">
-      <input (change)="calculatePGleft()" type="number" min="0" max="100" [(ngModel)]="nicVG" name="nicVG" class="form-control">
+      <input (change)="calculatePGleft()" type="number" min="0" max="100" [(ngModel)]="nicVG" name="nicVG" class="form-control" >
         <div class="input-group-append">
           <span class="input-group-text">%</span>
         </div>
       </div>
     </div>
-    <button (click)="toggleFlavor()" id="flavorBtn" class="btn btn-dark">Add Flavor</button>
+    <button (click)="toggleFlavor()" id="flavorBtn" class="btn btn-dark" style="display: block; margin: 0 auto;">Add Flavor</button>
     <div *ngIf="flavorShow"  class="form-group row">
       <label for="flavor" class="col-sm-5">Flavor</label>
       <div class="col-sm-7 input-group mb-3">
