@@ -22,7 +22,7 @@ mongoose.connection.on('error',(err)=>{
   }
 })
 
-const port = 3000;
+const port = process.env.PORT ||8080;
 
 app.use(cors());
 app.use(bodyparser.json());
