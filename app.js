@@ -10,6 +10,7 @@ var app =  express();
 
 const route = require('./routes/route');
 
+//mongoose.connect('mongodb://localhost:27017/eLiquid-calc');
 mongoose.connect('mongodb://admin:admin@ds011482.mlab.com:11482/eliquid-calculator');
 
 mongoose.connection.on('connected',()=>{
@@ -22,7 +23,7 @@ mongoose.connection.on('error',(err)=>{
   }
 })
 
-const port = process.env.PORT ||8080;
+const port = 3000;
 
 app.use(cors());
 app.use(bodyparser.json());

@@ -8,6 +8,8 @@ import {RouterModule} from "@angular/router";
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { MyRecipesComponent } from './components/my-recipes/my-recipes.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 
@@ -15,7 +17,9 @@ import { MyRecipesComponent } from './components/my-recipes/my-recipes.component
   declarations: [
     AppComponent,
     CalculatorComponent,
-    MyRecipesComponent
+    MyRecipesComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
