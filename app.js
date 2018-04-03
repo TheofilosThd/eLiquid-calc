@@ -14,7 +14,7 @@ const route = require('./routes/route');
 mongoose.connect('mongodb://admin:admin@ds011482.mlab.com:11482/eliquid-calculator');
 
 mongoose.connection.on('connected',()=>{
-  console.log('Connected to database @27017');
+  console.log('Connected to database @ds011482.mlab.com:11482');
 });
 
 mongoose.connection.on('error',(err)=>{
