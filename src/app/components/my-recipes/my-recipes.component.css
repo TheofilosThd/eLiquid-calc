@@ -1,3 +1,8 @@
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
 #searchField {
   background-image: url('../../../assets/images/search_logo.png'); /* Add a search icon to input */
   background-position: 0% 50%; /* Position the search icon */

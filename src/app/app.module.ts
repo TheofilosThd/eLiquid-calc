@@ -33,6 +33,10 @@ import { RegisterComponent } from './components/register/register.component';
       {
         path:'',
         component:CalculatorComponent
+      },
+      {
+        path:'\login',
+        component:LoginComponent
       }
       ])
   ],

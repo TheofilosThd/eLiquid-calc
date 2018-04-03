@@ -36,7 +36,7 @@ export class CalculatorComponent implements OnInit {
   constructor(private calculatorService:CalculatorService) { }
 
   ngOnInit() {
-    this.name='Recipe';
+    this.name='';
     this.quantity=10;
     this.strength=6;
     this.pg=30;
@@ -80,6 +80,9 @@ export class CalculatorComponent implements OnInit {
       date:((new Date).toLocaleDateString())
     }
 
+    if(newRecipe.name.length==0){
+      newRecipe.name='Recipe';
+    }
 
     this.calculatorService.addRecipe(newRecipe)
       .subscribe(recipe=>{
