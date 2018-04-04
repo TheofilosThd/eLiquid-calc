@@ -8,6 +8,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   background-position: 2% 50%; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 70%; /* Full-width */
+  height: 70%;
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
@@ -22,6 +23,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   background-position: 2% 50%; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 70%; /* Full-width */
+  height: 70%;
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
@@ -33,6 +35,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 #login_btn{
   width: 70%;
+  height: 70%;
   font-size: 16px;
   border : 1px solid #ddd;
   margin-bottom: 12px;
@@ -45,8 +48,45 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .login-form{
   margin-top: 2%;
+  margin-left: 19%;
 }
 
 .recover{
   padding-left: 42%;
+}
+
+#form_wrapper{
+  margin-top: 10%;
+  /*
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: lightgray;
+  outline-offset: 10px;
+  */
+}
+
+#guest_btn{
+  border : 1px solid #ddd;
+  background-color: indigo;
+  color:white;
+  outline: none;
+  border-radius: 10px;
+  width:30%;
+  height: 30%;
+  font-size: 1vw;
+  margin-left: 28%;
+  margin-top: 38%;
+}
+
+#register_link{
+  margin-top: 5%;
+}
+
+#register_ref {
+  color:gray;
+  margin-left: 19%;
+}
+
+#register_ref:hover{
+  color:indigo;
 }
