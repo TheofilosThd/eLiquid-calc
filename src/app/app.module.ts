@@ -10,6 +10,7 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
 import { MyRecipesComponent } from './components/my-recipes/my-recipes.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 
@@ -19,7 +20,8 @@ import { RegisterComponent } from './components/register/register.component';
     CalculatorComponent,
     MyRecipesComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
