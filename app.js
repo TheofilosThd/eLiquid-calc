@@ -27,7 +27,7 @@ const port = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(bodyparser.json());
-app.use(express.static(path.join(__dirname,'dist')));
+app.use(express.static(path.join(__dirname,'public')));
 
 app.use('/api',route);
 

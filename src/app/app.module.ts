@@ -32,11 +32,12 @@ import { RegisterComponent } from './components/register/register.component';
       },
       {
         path:'',
-        component:CalculatorComponent
+        component: LoginComponent
+        //component:CalculatorComponent
       },
       {
-        path:'\login',
-        component:LoginComponent
+        path:'\create',
+        component:CalculatorComponent
       }
       ])
   ],
