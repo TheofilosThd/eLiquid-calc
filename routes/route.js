@@ -46,19 +46,5 @@ router.delete('/recipe/:id',(req,res,next)=>{
 });
 
 
-router.get('/login',(req,res,next)=>{
-  res.send('login');
-});
 
-router.get('/register',(req,res,next)=>{
-  res.send('register');
-});
-
-router.get('/logout', (req, res,next) => {
-  res.send('You are on the logout page');
-});
-
-router.get('/', function (req, res, next) {
-  return res.sendFile(path.join(__dirname + '/src/app/components/login/login.component.html'));
-});
 module.exports =router;
